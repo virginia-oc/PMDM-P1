@@ -259,3 +259,69 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3270.384572 seconds.
+  path: Assets/Sprites/firePlayer.png
+  artifactKey: Guid(8d8d1ffa8c517884880b2c509f067654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/firePlayer.png using Guid(8d8d1ffa8c517884880b2c509f067654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe94098936118204d6933f1e6a8dd6dc') in 0.092688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.186891 seconds.
+  path: Assets/Sprites/fireEnemy01.png
+  artifactKey: Guid(055bbbe7f0189ed4a9aa1cb27339fd93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/fireEnemy01.png using Guid(055bbbe7f0189ed4a9aa1cb27339fd93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4afccbbf600b381e31736c0f84d66d6') in 0.040011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/fireEnemy03.png
+  artifactKey: Guid(c65305adcee12044389b4aa043500380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/fireEnemy03.png using Guid(c65305adcee12044389b4aa043500380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9bbdc7c95d24f57106c34403623091') in 0.031617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/fireEnemy04.png
+  artifactKey: Guid(d259dd6bc6fcd654b9c05bbae82680da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/fireEnemy04.png using Guid(d259dd6bc6fcd654b9c05bbae82680da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a4a77908ca83d782106c3ad563a347b') in 0.028421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.539991 seconds.
+  path: Assets/Sounds
+  artifactKey: Guid(5e0668bad3c9f7c4b89ccdb6423433bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds using Guid(5e0668bad3c9f7c4b89ccdb6423433bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3901b5fab8dc00f154f31dd4a1801ce8') in 0.006794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.145149 seconds.
+  path: Assets/Sounds/exploSound.mp3
+  artifactKey: Guid(1b8c3c3bf1b79c84e85459bebcc5ad9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/exploSound.mp3 using Guid(1b8c3c3bf1b79c84e85459bebcc5ad9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d64fd4ef155e85c5ece3c31b76dcba6') in 0.081695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sounds/fireSoundEnemy.mp3
+  artifactKey: Guid(b0c1e3554f904674eb52983a38aa605f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/fireSoundEnemy.mp3 using Guid(b0c1e3554f904674eb52983a38aa605f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd092a558d53a883460bc9f09738d61c6') in 0.014482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.587632 seconds.
+  path: Assets/Sprites/enemigo.png
+  artifactKey: Guid(0c7541acfa49db8438042f89addaf11c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/enemigo.png using Guid(0c7541acfa49db8438042f89addaf11c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07cd881dd221884748b67b3f5ec0d513') in 0.030445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 89.453250 seconds.
+  path: Assets/Animations
+  artifactKey: Guid(ad6ae04fdffdef640ba58251d0017913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations using Guid(ad6ae04fdffdef640ba58251d0017913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3f12db07ac97cdb3c7d42ee1b590724') in 0.006992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.325869 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(692335490e2f3ba4482446b020380885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(692335490e2f3ba4482446b020380885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c64a74e4e1f6eddda738e67407ad1154') in 0.007082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.078902 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(9ae3049a307837148bc9fe5ee482596b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(9ae3049a307837148bc9fe5ee482596b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be7d526d53805719463693716e3c3944') in 0.007283 seconds 

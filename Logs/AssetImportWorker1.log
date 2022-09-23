@@ -223,3 +223,15 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 6055.879949 seconds.
+  path: Assets/Sprites/fireEnemy02.png
+  artifactKey: Guid(d616db3af06527b40a241ad8d1b7309a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/fireEnemy02.png using Guid(d616db3af06527b40a241ad8d1b7309a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee79cb07aee0ca0622d3502df7c68548') in 0.201396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.616658 seconds.
+  path: Assets/Sounds/fireSound.mp3
+  artifactKey: Guid(8382287435b86404c8ff03e07918032c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/fireSound.mp3 using Guid(8382287435b86404c8ff03e07918032c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37f8f249f5b11418e4de71fb6101c0ab') in 0.080058 seconds 
