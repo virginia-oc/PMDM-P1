@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 4
+  prefabFirePlayer: {fileID: 0}
 --- !u!50 &2332727674147618104
 Rigidbody2D:
   serializedVersion: 4

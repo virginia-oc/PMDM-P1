@@ -6,6 +6,8 @@ TagManager:
   tags:
   - EdgeX
   - EdgeY
+  - EdgeCenter
+  - Enemy
   layers:
   - Default
   - TransparentFX

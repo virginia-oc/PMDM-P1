@@ -24,10 +24,9 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "EdgeX")       
+        if (other.tag == "EdgeX" || other.tag == "EdgeCenter")       
             velocityX *= -1;
-
-        if (other.tag == "EdgeY")
+        else if (other.tag == "EdgeY")
             velocityY *= -1;
     }
 }
