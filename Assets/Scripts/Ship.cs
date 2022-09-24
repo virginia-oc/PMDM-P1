@@ -19,19 +19,19 @@ public class Ship : MonoBehaviour
         float deltaX = horizontal * velocity * Time.deltaTime;
         float deltaY = vertical * velocity * Time.deltaTime;
 
-        if (transform.position.x + deltaX > 6 || 
+        if (transform.position.x + deltaX > 6 ||
             transform.position.x + deltaX < -6)
             deltaX = 0;
-        
+
         if (transform.position.y + deltaY > 4.5 ||
-            transform.position.y + deltaY < -4.5)       
+            transform.position.y + deltaY < -4.5)
             deltaY = 0;
-        
+
         transform.Translate(deltaX, deltaY, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
+      
     }
 }
