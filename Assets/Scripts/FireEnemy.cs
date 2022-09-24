@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FirePlayer : MonoBehaviour
+public class FireEnemy : MonoBehaviour
 {
-    [SerializeField] float velocity = 6;
+    [SerializeField] float velocity = -6;
 
     // Start is called before the first frame update
     private void Start()
@@ -22,10 +22,10 @@ public class FirePlayer : MonoBehaviour
     {
         if (collision.tag == "EdgeX")
             Destroy(gameObject);
-        else if (collision.tag == "Enemy")
+        else if (collision.tag == "Player")
         {
             Destroy(gameObject);
-            Destroy(collision.gameObject);
+            Ship.lives--;
         }
     }
 }

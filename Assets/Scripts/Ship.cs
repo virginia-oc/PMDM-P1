@@ -1,20 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ship : MonoBehaviour
 {
     [SerializeField] float velocity = 4;
     [SerializeField] Transform prefabFirePlayer;
+    public static int lives { get; set; }
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        lives = 3;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
@@ -38,6 +40,9 @@ public class Ship : MonoBehaviour
             Physics2D.IgnoreCollision(fire.GetComponent<Collider2D>(),
                 GetComponent<Collider2D>());
         }
+
+        if (lives == 0)
+            SceneManager.LoadScene("GameOver");
     }
 
     private void OnTriggerEnter2D(Collider2D other)

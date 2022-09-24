@@ -99,6 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb7fa7abdc39ca940bd0e9c1a016b720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocityX: 2
+  velocityY: 2
+  prefabFireEnemy: {fileID: 6525260447331157955, guid: f313be682636d7745bf419b47cfce72c, type: 3}
 --- !u!50 &-7238414794748321626
 Rigidbody2D:
   serializedVersion: 4

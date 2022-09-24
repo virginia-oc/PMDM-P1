@@ -7,15 +7,30 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] float velocityX = 2;
     [SerializeField] float velocityY = 2;
+    [SerializeField] Transform prefabFireEnemy;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        StartCoroutine(Shot());
+    }
+
+    private IEnumerator Shot()
+    {
+        float pause = UnityEngine.Random.Range(2.0f, 6.0f);
+        yield return new WaitForSeconds(pause);
+
+        Transform fireEnemy = Instantiate(prefabFireEnemy,
+            transform.position, Quaternion.identity);
+
+        Physics2D.IgnoreCollision(fireEnemy.GetComponent<Collider2D>(), 
+            GetComponent<Collider2D>());
+
+        StartCoroutine(Shot());
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         transform.Translate(
             velocityX * Time.deltaTime,
