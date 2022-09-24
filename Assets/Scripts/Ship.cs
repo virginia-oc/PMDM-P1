@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Ship : MonoBehaviour
 {
@@ -42,11 +41,14 @@ public class Ship : MonoBehaviour
         }
 
         if (lives == 0)
-            SceneManager.LoadScene("GameOver");
+            Menu.GameOver();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-      
+        if (other.tag == "Enemy")
+        {
+            lives--;
+        }      
     }
 }

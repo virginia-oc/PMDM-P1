@@ -17,8 +17,18 @@ public class Menu : MonoBehaviour
         
     }
 
-    public void LaunchGame()
+    public static void WelcomeScene()
+    {
+        SceneManager.LoadScene("WelcomeScene");
+    }
+
+    public static void LaunchGame()
     {
         SceneManager.LoadScene("Level1");
+    }
+
+    public static void GameOver()
+    {
+        SceneManager.LoadScene("GameOverScene");
     }
 }
