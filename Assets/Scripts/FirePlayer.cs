@@ -5,6 +5,7 @@ using UnityEngine;
 public class FirePlayer : MonoBehaviour
 {
     [SerializeField] float velocity = 6;
+    [SerializeField] Transform prefabExplosion;
 
     // Start is called before the first frame update
     private void Start()
@@ -24,7 +25,10 @@ public class FirePlayer : MonoBehaviour
             Destroy(gameObject);
         else if (collision.tag == "Enemy")
         {
+            Transform explosion = Instantiate(prefabExplosion,
+                collision.transform.position, Quaternion.identity);
             Destroy(gameObject);
+            Destroy(explosion.gameObject, 1f);
             Destroy(collision.gameObject);
         }
     }

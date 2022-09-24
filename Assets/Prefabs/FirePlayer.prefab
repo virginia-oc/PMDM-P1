@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 3652513982873441935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db154382d49a6c6449f661bd63fc3afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 6
+  velocity: 8
+  prefabExplosion: {fileID: 6273167070569089327, guid: e8e2ad1b66178e74599681ec7db90c21, type: 3}
 --- !u!61 &-3304453331851715594
 BoxCollider2D:
   m_ObjectHideFlags: 0

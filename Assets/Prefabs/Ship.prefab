@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 5353476776690524490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 4
-  prefabFirePlayer: {fileID: 0}
+  prefabFirePlayer: {fileID: 2952226014013567664, guid: 0759c0d0fbcf8ed4b800a64c2fecd2b8, type: 3}
 --- !u!50 &2332727674147618104
 Rigidbody2D:
   serializedVersion: 4
