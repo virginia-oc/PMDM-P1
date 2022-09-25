@@ -25,16 +25,13 @@ public class Menu : MonoBehaviour
     public void LaunchGame()
     {
         SceneManager.LoadScene("HowToScene");
-        while (true)
-        {
-            StartCoroutine(WaitForLevel1());
-        }
         
+        StartCoroutine(WaitForLevel1());
     }
 
     private IEnumerator WaitForLevel1()
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSecondsRealtime(2.0f);      
         Debug.Log("Anted de load level1");
         SceneManager.LoadScene("Level1");
         Debug.Log("despues de load level1");

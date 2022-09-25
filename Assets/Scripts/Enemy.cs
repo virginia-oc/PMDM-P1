@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float velocityX = 2;
-    [SerializeField] float velocityY = 2;
+    [SerializeField] float velocityX = 0;
+    [SerializeField] float velocityY = 2f;
     [SerializeField] Transform prefabFireEnemy;
+    private float VoY = 2f; //Initial velocity in OY
+    private float VoX = -2f; //Initial velocity in OX
+    private double collisionsY = 0;
 
     // Start is called before the first frame update
     private void Start()
@@ -41,9 +44,20 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "EdgeX" || other.tag == "EdgeCenter")       
-            velocityX *= -1;
+        if (other.tag == "EdgeX")
+        {
+            Menu.GameOver();
+        }
+        else if (other.tag == "EdgeCenter")
+        {
+            velocityX = 0;
+            velocityY = (float) (VoY * Math.Pow(-1, collisionsY));
+        }   
         else if (other.tag == "EdgeY")
-            velocityY *= -1;
+        {
+            collisionsY++;
+            velocityX = VoX;
+            velocityY = 0;         
+        }
     }
 }
