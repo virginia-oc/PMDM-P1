@@ -30,6 +30,7 @@ public class FirePlayer : MonoBehaviour
             Destroy(gameObject);
             Destroy(explosion.gameObject, 1f);
             Destroy(collision.gameObject);
+            Ship.points += 10;
         }
     }
 }

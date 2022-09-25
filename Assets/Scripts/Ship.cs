@@ -8,11 +8,14 @@ public class Ship : MonoBehaviour
     [SerializeField] Transform prefabFirePlayer;
     [SerializeField] TMPro.TextMeshProUGUI counterText;
     public static int lives { get; set; }
+    public static int points { get; set; }
 
     // Start is called before the first frame update
     private void Start()
     {
         lives = 3;
+        points = 0;
+        counterText.text = "Lives left: " + lives;
     }
 
     // Update is called once per frame
@@ -43,13 +46,22 @@ public class Ship : MonoBehaviour
 
         if (lives == 0)
             Menu.GameOver();
+        else if(points == 60)      
+            StartCoroutine(WaitForWinScene(2.0f));       
+
+        counterText.text = "Lives left: " + lives;
+    }
+
+    private IEnumerator WaitForWinScene(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        Menu.ShowWinScene();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Enemy")
-        {
-            counterText.text = "Lives left: " + lives--;
-        }      
+        if (other.tag == "Enemy")     
+            lives--;
+            
     }
 }

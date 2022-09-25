@@ -17,7 +17,7 @@ public class Menu : MonoBehaviour
         
     }
 
-    public static void WelcomeScene()
+    public static void ShowWelcomeScene()
     {
         SceneManager.LoadScene("WelcomeScene");
     }
@@ -30,5 +30,15 @@ public class Menu : MonoBehaviour
     public static void GameOver()
     {
         SceneManager.LoadScene("GameOverScene");
+    }
+
+    public static void ShowWinScene()
+    {
+        SceneManager.LoadScene("WinScene");
+    }
+
+    public static void QuitGame()
+    {
+
     }
 }
