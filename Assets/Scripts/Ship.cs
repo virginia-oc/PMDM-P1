@@ -6,6 +6,7 @@ public class Ship : MonoBehaviour
 {
     [SerializeField] float velocity = 4;
     [SerializeField] Transform prefabFirePlayer;
+    [SerializeField] TMPro.TextMeshProUGUI counterText;
     public static int lives { get; set; }
 
     // Start is called before the first frame update
@@ -48,7 +49,7 @@ public class Ship : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            lives--;
+            counterText.text = "Lives left: " + lives--;
         }      
     }
 }
