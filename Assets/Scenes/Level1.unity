@@ -1421,17 +1421,9 @@ PrefabInstance:
       propertyPath: counterText
       value: 
       objectReference: {fileID: 2100529356}
-    - target: {fileID: 1752387975, guid: 0103bdf6704dd3249b2b0dbfecb00852, type: 3}
-      propertyPath: prefabFirePlayer
-      value: 
-      objectReference: {fileID: 2952226014013567664, guid: 0759c0d0fbcf8ed4b800a64c2fecd2b8, type: 3}
     - target: {fileID: 5353476776690524490, guid: 0103bdf6704dd3249b2b0dbfecb00852, type: 3}
       propertyPath: m_Name
       value: Ship
-      objectReference: {fileID: 0}
-    - target: {fileID: 5353476776690524490, guid: 0103bdf6704dd3249b2b0dbfecb00852, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6763405995662577218, guid: 0103bdf6704dd3249b2b0dbfecb00852, type: 3}
       propertyPath: m_RootOrder

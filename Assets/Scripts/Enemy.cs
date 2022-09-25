@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour
         float pause = UnityEngine.Random.Range(2.0f, 6.0f);
         yield return new WaitForSeconds(pause);
 
+        GetComponent<AudioSource>().Play();
+
         Transform fireEnemy = Instantiate(prefabFireEnemy,
             transform.position, Quaternion.identity);
 

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Ship : MonoBehaviour
@@ -38,6 +37,7 @@ public class Ship : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
+            GetComponent<AudioSource>().Play();
             Transform fire = Instantiate(prefabFirePlayer, transform.position,
                 Quaternion.identity);
             Physics2D.IgnoreCollision(fire.GetComponent<Collider2D>(),
