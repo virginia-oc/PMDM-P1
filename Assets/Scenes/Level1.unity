@@ -1772,6 +1772,10 @@ PrefabInstance:
       propertyPath: counterText
       value: 
       objectReference: {fileID: 2100529356}
+    - target: {fileID: 1752387975, guid: 0103bdf6704dd3249b2b0dbfecb00852, type: 3}
+      propertyPath: prefabExplosion
+      value: 
+      objectReference: {fileID: 6273167070569089327, guid: e8e2ad1b66178e74599681ec7db90c21, type: 3}
     - target: {fileID: 5353476776690524490, guid: 0103bdf6704dd3249b2b0dbfecb00852, type: 3}
       propertyPath: m_Name
       value: Ship

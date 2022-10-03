@@ -23,14 +23,16 @@ public class FirePlayer : MonoBehaviour
     {
         if (collision.tag == "EdgeX")
             Destroy(gameObject);
-        else if (collision.tag == "Enemy")
+        else if (collision.tag == "Enemy" || collision.tag == "FireEnemy")
         {
             Transform explosion = Instantiate(prefabExplosion,
                 collision.transform.position, Quaternion.identity);
             Destroy(gameObject);
             Destroy(explosion.gameObject, 1f);
             Destroy(collision.gameObject);
-            Ship.points += 10;
+
+            if (collision.tag == "Enemy")
+                Ship.points += 10;
         }
     }
 }

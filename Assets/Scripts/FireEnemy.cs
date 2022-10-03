@@ -20,12 +20,7 @@ public class FireEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "EdgeX")
+        if (collision.tag == "EdgeX" || collision.tag == "Player")
             Destroy(gameObject);
-        else if (collision.tag == "Player")
-        {
-            Destroy(gameObject);
-            Ship.lives--;
-        }
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - EdgeY
   - EdgeCenter
   - Enemy
+  - FireEnemy
   layers:
   - Default
   - TransparentFX

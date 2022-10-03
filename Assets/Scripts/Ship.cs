@@ -6,8 +6,10 @@ public class Ship : MonoBehaviour
     [SerializeField] float velocity = 4;
     [SerializeField] Transform prefabFirePlayer;
     [SerializeField] TMPro.TextMeshProUGUI counterText;
+    [SerializeField] Transform prefabExplosion;
     public static int lives { get; set; }
     public static int points { get; set; }
+    private int gameOverFlag = 0;
 
     // Start is called before the first frame update
     private void Start()
@@ -44,8 +46,14 @@ public class Ship : MonoBehaviour
                 GetComponent<Collider2D>());
         }
 
-        if (lives == 0)
-            Menu.GameOver();
+        if (lives == 0 && gameOverFlag == 0)
+        {
+            gameOverFlag = 1;
+            Transform explosion = Instantiate(prefabExplosion,
+                transform.position, Quaternion.identity);
+            
+            StartCoroutine(WaitForGameOver(1.0f));
+        }
         else if(points == 60)      
             StartCoroutine(WaitForWinScene(2.0f));       
 
@@ -58,10 +66,15 @@ public class Ship : MonoBehaviour
         Menu.ShowWinScene();
     }
 
+    private IEnumerator WaitForGameOver(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        Menu.GameOver();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Enemy")     
-            lives--;
-            
+        if (other.tag == "Enemy" || other.tag == "FireEnemy")     
+            lives--;    
     }
 }
